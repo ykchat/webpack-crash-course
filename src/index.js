@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import './style.css';
+import logo from './logo.png';
 
 function componet() {
     const element = document.createElement('div');
@@ -8,5 +9,12 @@ function componet() {
     return element;
 }
 
+function image() {
+    const image = new Image();
+    image.src = logo;
+    return image;
+}
+
 document.body.appendChild(componet());
 document.body.classList.add('haikei');
+document.body.appendChild(image());
